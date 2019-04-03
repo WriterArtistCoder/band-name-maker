@@ -6,7 +6,7 @@ public class BandNameMaker {
             "Noah", "the Noahs", "Barbie", "the Barbies", "the Nuclear Bomb", "the Nuclear Bombs", "Barney", "the Barnies", "Harry Potter", "the Harry Potters",
             "Homer Simpson", "the Homer Simpsons", "the Simpson", "the Simpsons", "the Beatle", "the Beatles", "the Beetle", "the Beetles", "Percy Jackson",
             "the Percy Jacksons", "My Little Pony", "my Little Ponies", "Phineas", "the Phineasi", "Ferb", "the Ferbs", "Calvin", "the Calvins", "Hobbes",
-            "the Hobbes"
+            "the Hobbes", "Duck, Duck, Goose", "the Ducks, Ducks, Geese",
         };
         
         String noun1 = nouns[new Random().nextInt(nouns.length)];
@@ -20,7 +20,6 @@ public class BandNameMaker {
         try {
             Runtime.getRuntime().exec("say " + noun1 + " and " + noun2);
         } catch (Exception e) {
-        	e.printStackTrace();
             System.out.println(">> TEXT-TO-SPEECH ALGORITHM NOT COOPERATING");
         }
     }
